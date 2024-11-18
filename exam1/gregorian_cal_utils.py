@@ -5,4 +5,4 @@ def is_leap_year(year: int) -> bool:
     :param year: an integer indicating a year.
     :return: A boolean indicating whether or not the year parameter is a leap year.
     """
-    pass  # implement me
+    
