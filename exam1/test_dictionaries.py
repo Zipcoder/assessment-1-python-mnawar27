@@ -63,3 +63,4 @@ class DictionariesTest(unittest.TestCase):
         for ddd, expected in test_cases:
             with self.subTest(f"{ddd} -> {expected}"):
                 self.assertEqual(expected, dictionaries.letterfreq(ddd))
+                
