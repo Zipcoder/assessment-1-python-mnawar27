@@ -19,6 +19,25 @@ Assume that the user’s input will indeed be in camel case.
 Now make one that does the opposite: snake2camel()
 '''
 
+def camel2snake(s):
+    a = []
+    for i in s:
+        if i.isupper():
+            a.append("_")
+        a.append(i.lower())
+    return "".join(a)
 
-def foo():
-    pass
+print(camel2snake("preferredFirstName"))   
+
+def snake2camel(s):
+
+    a = s.split("_")
+    a[0] = a[0].lower()
+
+    for i in range(1, len(a)):
+        a[i] = a[i].capitalize()
+    return "".join(a)
+  
+print(snake2camel("preferred_first_name"))
+
+    
