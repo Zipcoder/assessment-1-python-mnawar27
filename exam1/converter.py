@@ -7,7 +7,8 @@ def meters_to_feet(meters: float) -> float:
     :param meters: A float representing a measurement in meters.
     :return: A float representing the input measurement converted to feet.
     """
-    pass  # implement me
+    ft = round((meters * 3.28084), 2)
+    return ft
 
 
 def feet_to_meters(feet: float) -> float:
@@ -19,7 +20,8 @@ def feet_to_meters(feet: float) -> float:
     :param feet: A float representing a measurement in feet.
     :return: A float representing the input measurement converted to meters.
     """
-    pass  # implement me
+    mt = round((feet/3.28084),2)
+    return mt
 
 
 def kilometer_to_miles(kilometers: float) -> float:
@@ -31,7 +33,8 @@ def kilometer_to_miles(kilometers: float) -> float:
     :param kilometers: A float representing a measurement in kilometers.
     :return: A float representing the input measurement converted to miles.
     """
-    pass  # implement me
+    return round((kilometers* .621371),2)
+
 
 
 def miles_to_kilometers(miles: float) -> float:
@@ -43,6 +46,6 @@ def miles_to_kilometers(miles: float) -> float:
     :param miles: A float representing a measurement in miles.
     :return: A float representing the input measurement converted to kilometers.
     """
-    pass  # implement me
+    return round ((miles * 1.60934),2)
 
 
